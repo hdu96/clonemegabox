@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="css/movie_list.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
+    <title>영화, 메가박스</title>
+    <!-- 파비콘 -->
+    <link rel="shirtcut icon" href="./img/favicon.ico">
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script defer src="js/incom.js"></script>
+    <script defer src="js/movie_list.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="gnb">
+                <div class="inner">
+                    <div class="location">
+                        <span><img src="./img/store/bg-location-home.png" alt="home"></span>
+                        <a href="#">영화</a>
+                        <a href="#">전체영화</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_w">
+                <div class="inner">
+                    <h2>전체영화</h2>
+                    <div class="tab">
+                        <ul>
+                            <li class="on"><a href="#">박스오피스</a></li>
+                            <li><a href="#">상영예정작</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="onair-condition">
+                        <div class="filter_wrap">
+                            <p class="filter_btn">
+                                <!-- showing -->
+                                <input id="switch" type="checkbox" name="keep">
+                                <label for="switch" value="showing" text="showing"></label>
+                                <p class="filter_name">개봉작만</p>
+                            </p>
+                            <p class="no-result-count"><strong id="totCnt">40</strong>개의 영화가 검색되었습니다.</p>
+                        </div>
+    
+                        <div class="movie-search">
+                            <input type="text" title="영화명을 입력하세요" id="ibxMovieNmSearch" name="ibxMovieNmSearch" placeholder="영화명 검색" class="input-text">
+                            <button type="button" class="btn-search-input" id="btnSearch">검색</button>
+                        </div>
+                    </div>
+    
+    
+                    <div class="movie-list-no-result" id="noDataDiv" style="display: none;">
+                        <p>현재 상영중인 영화가 없습니다.</p>
+                    </div>
+    
+                    <div class="movie-list">
+                        <ul>
+
+                        </ul>
+                        <div class="load_more_box">
+                            <button class="show_img">
+                                <span class="title">더보기</span>
+                                <i class="load_more_img"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
